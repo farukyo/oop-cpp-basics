@@ -543,7 +543,9 @@ using namespace std;
 int main(){
     int x[2] = {5,6};
     int y[2];
-    y = x;
+    for (int i = 0; i < 2; ++i) {
+        y[i] = x[i];
+    }
     x[1]++;
     cout << x << " " << y;
 }
